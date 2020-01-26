@@ -1,0 +1,85 @@
+#window{
+height: 200px;
+width: 200px;
+
+
+}
+#imgs{
+
+
+
+  height: 200px;
+  width: 608px;
+  position: relative;
+}
+#buttons{
+width: 200px;
+display: flex;
+
+}
+#button {
+
+  display: none;
+  background-color: DodgerBlue;
+   border: none;
+  border-radius: 20px;
+   color: white;
+   padding: 4px 8px;
+   font-size: 25px;
+   cursor: pointer;
+   outline: none;
+   border:0px;
+
+}
+
+#button2 {
+
+  display: none;
+  background-color: DodgerBlue;
+   border: none;
+   border-radius: 20px;
+   color: white;
+   padding: 4px 8px;
+   font-size: 25px;
+   cursor: pointer;
+   outline: none;
+   float:right;
+
+}
+
+#dot1 {
+
+  display: none;
+   border: none;
+   border-radius: 20px;
+   color: white;
+   padding: 4px 8px;
+   font-size: 25px;
+   cursor: pointer;
+   outline: none;
+   float:right;
+  }
+   #dot2 {
+
+     display: none;
+      border: none;
+      border-radius: 20px;
+      color: white;
+      padding: 4px 8px;
+      font-size: 25px;
+      cursor: pointer;
+      outline: none;
+      float:right;
+    }
+    #dot3 {
+
+      display: none;
+       border: none;
+       border-radius: 20px;
+       color: white;
+       padding: 4px 8px;
+       font-size: 25px;
+       cursor: pointer;
+       outline: none;
+       float:right;
+     }

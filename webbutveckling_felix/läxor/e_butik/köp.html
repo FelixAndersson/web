@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <link rel="stylesheet" href="css/Style2.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Köp</title>
+  </head>
+  <body>
+<div id="wrapper">
+
+
+    <header>
+  <img src="bilder/Untitled.png" alt="märke" class="märket">
+    </header>
+    <nav>
+
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="kontakta.html">Kontakta</a></li>
+
+      </ul>
+    </nav>
+    <main>
+<div class="bilder">
+
+
+      <div class="w3-content w3-display-container">
+  <img class="mySlides" src="bilder/felix2.jpg" alt="hoodie" style="width:100%">
+  <img class="mySlides" src="bilder/felix3.jpg" alt="hoodie" style="width:100%">
+  <img class="mySlides" src="bilder/felix4.jpg" alt="hoodie" style="width:100%">
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+</div>
+<div class="infon">
+  <b>L&S Hoddie</b>
+  <br>
+  Lyle & Scotts Pullover Hoodie är tillverkad av 100% bomull
+  <br>
+   och är den perfekta avslappnade stilen för helgen. En mycket mångsidig stil,
+   <br>
+    koppla ihop denna luvtröja med jeans eller håll den avslappnad med ett par joggingbyxor.
+  <br>
+  <br>
+  - Justerbar huva med bomullstrekk
+  <br>
+  <br>
+  - Brand Eagle på bröstet
+  <br>
+  <br>
+  <select>
+    <option value="selector" selected>välj storlek</option>
+    <option value="s">s</option>
+    <option value="M">M</option>
+    <option value="L">L</option>
+    <option value="XL">XL</option>
+  </select>
+  <br>
+  <br>
+  <button type="button" class="button" onclick="alert('Denna produkten är tyvärr slutsåld!')">Köp</button>
+</div>
+    </main>
+    <aside>
+
+    </aside>
+    <footer>
+
+    </footer>
+</div>
+
+  </body>
+</html>

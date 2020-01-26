@@ -1,0 +1,43 @@
+header {
+  grid-area: header;
+  background-color: pink;
+  height: 200px;
+}
+main {
+  grid-area: main;
+  background-color: blue;
+  height: 200px;
+}
+aside {
+  grid-area: sidebar;
+  background-color: green;
+  height: 200px;
+}
+footer {
+  grid-area: footer;
+  background-color: red;
+  height: 200px;
+
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 33% 33% 33%;
+  grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+@media only screen and (max-width: 650px) {
+  #wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+    "header"
+    "main"
+    "sidebar"
+    "footer";
+
+  }
+}

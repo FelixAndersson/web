@@ -1,0 +1,119 @@
+header {
+  grid-area: header;
+  background-image: url('../bilder/backgrunden.png');
+}
+nav {
+  grid-area: nav;
+
+
+}
+main {
+  grid-area: main;
+  background-color: #e6e6e6;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+
+
+aside {
+  grid-area: aside;
+  background-color: #e6e6e6;
+
+}
+footer {
+  grid-area: footer;
+  background-image: url('../bilder/backgrunden.png');
+
+
+}
+
+#wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows:15% auto auto 5%;
+  grid-template-areas:
+    "header header header header"
+    "nav nav nav nav"
+    "main main main main"
+    "footer footer footer footer";
+}
+@media only screen and (max-width: 650px) {
+  main div{
+    width: 45%;
+    height: 15%;
+  }
+
+  #wrapper {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% auto auto 5%;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+
+  }
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 100%;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  height: 50%;
+
+}
+
+li a:hover {
+  background-color: #111;
+}
+.bild{
+  width: 50%;
+  height: 100%;
+  border-radius: 5%;
+  float: left;
+}
+.märket{
+width: 20% ;
+height: 100% ;
+margin: auto;
+display: block;
+}
+#bilder{
+width: 50%;
+height: 100%;
+}
+#infon{
+  width: 50% ;
+  height: 100% ;
+}
+.button {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: red;
+}
